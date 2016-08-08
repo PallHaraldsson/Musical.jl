@@ -1,7 +1,7 @@
 
 
 # Synthesizer
-
+uknown
 abstract Envelope
 type ADSREnvelope <: Envelope
     A::TIME_TYPE      #time
@@ -204,7 +204,7 @@ function standardnote2value(n::ASCIIString)
     elseif note == "B"
         v += 11
     else
-        error("uknown note ", string(note))
+        error("unknown note ", string(note))
     end
     return v
 end
